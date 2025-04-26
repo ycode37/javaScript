@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo-wrapper">
+          <div class="logo">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </div>
+
+          <h3>Image Generator {AI}</h3>
+        </div>
+        <div class="theme-toggle"><i class="fa-solid fa-moon"></i></div>
+      </div>
+      <div class="main-content">
+        <form action="" class="prompt-form">
+          <div class="prompt-container">
+            <textarea
+              class="prompt-input"
+              placeholder="Describe Your Imagination"
+              required
+              autofocus
+            ></textarea>
+            <button class="prompt-button">
+              <i class="fa-solid fa-dice"></i>
+            </button>
+          </div>
+          <div class="prompt-actions">
+            <div class="select-wrapper">
+              <select class="custom-select" required>
+                <option value="" selected disabled>Select Model</option>
+                <option value="black-forest-labs/FLUX.1-dev">FLUX 1-DEV</option>
+                <option value="black-forest-labs/FLUX.1-schnell">
+                  FLUX 1-SCHNELL
+                </option>
+              </select>
+            </div>
+            <div class="select-wrapper">
+              <select class="custom-select" required>
+                <option value="" selected disabled>Image Count</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+              </select>
+            </div>
+            <button type="submit" class="generate-button">
+              <i class="fa-solid fa-wand-sparkles"></i>
+              Generate
+            </button>
+          </div>
+          <div class="gallery-grid">
+            <div class="img-card">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Virat_Kohli_during_the_India_vs_Aus_4th_Test_match_at_Narendra_Modi_Stadium_on_09_March_2023.jpg"
+                alt=""
+              />
+            </div>
+            <div class="img-card">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Virat_Kohli_during_the_India_vs_Aus_4th_Test_match_at_Narendra_Modi_Stadium_on_09_March_2023.jpg"
+                alt=""
+              />
+            </div>
+            <div class="img-card">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Virat_Kohli_during_the_India_vs_Aus_4th_Test_match_at_Narendra_Modi_Stadium_on_09_March_2023.jpg"
+                alt=""
+              />
+            </div>
+            <div class="img-card">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Virat_Kohli_during_the_India_vs_Aus_4th_Test_match_at_Narendra_Modi_Stadium_on_09_March_2023.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

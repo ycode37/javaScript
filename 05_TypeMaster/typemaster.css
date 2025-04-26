@@ -1,0 +1,40 @@
+body {
+  font-family: 'Courier New', monospace;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#inputArea {
+  width: 80%;
+  max-width: 600px;
+  padding: 15px;
+  font-size: 18px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+#inputArea:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.2);
+}
+
+/* For when you add typing stats later */
+.stats-container {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+}
